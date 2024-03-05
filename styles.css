@@ -1,0 +1,133 @@
+/* font-family: "Poppins", sans-serif; */
+/* - Red: hsl(0, 78%, 62%)
+- Cyan: hsl(180, 62%, 55%)
+- Orange: hsl(34, 97%, 64%)
+- Blue: hsl(212, 86%, 64%) */
+
+:root {
+  --font-Family: "Poppins", sans-serif;
+  --font-Weight-light: 200;
+  --font-Weight-regular: 400;
+  --font-Weight-bold: 600;
+
+  --font-size-400: 0.9375rem;
+  --font-size-500: 1.25rem;
+  --font-size-600: 1.625rem;
+  --font-size-900: 2.5rem;
+
+  /* Neutral Colors */
+  --color-light-gray: hsl(0, 0%, 98%);
+  --color-Grayish-Blue: hsl(229, 6%, 66%);
+  --color-Dark-Blue: hsl(234, 12%, 34%);
+
+  /* Primary Colors */
+  --color-primary-red: hsl(0, 78%, 62%);
+  --color-primary-Cyan: hsl(180, 62%, 55%);
+  --color-primary-Orange: hsl(34, 97%, 64%);
+  --color-primary-Blue: hsl(212, 86%, 64%);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: var(--font-Family);
+  font-weight: var(--font-Weight-regular);
+  line-height: 1.8;
+  color: var(--color-Grayish-Blue);
+}
+
+body {
+  margin: 0;
+  background-color: var(--color-light-gray);
+  margin-bottom: 5rem;
+}
+
+h1,
+h2,
+h3 {
+  color: var(--color-Dark-Blue);
+  line-height: 1.3;
+}
+
+.wrapper {
+  padding-inline: 2rem;
+  margin-inline: auto;
+  max-width: 1200px;
+}
+
+.wrapper-narrow {
+  max-width: 550px;
+}
+
+header {
+  text-align: center;
+  margin-block: 6rem;
+}
+
+header p {
+  font-size: var(--font-size-500);
+}
+
+h1 {
+  font-size: var(--font-size-900);
+  font-weight: var(--font-Weight-light);
+}
+
+h1 span {
+  font-weight: var(--font-Weight-bold);
+}
+
+.layout-grid {
+  display: grid;
+  gap: 2rem;
+}
+
+@media (min-width: 800px) {
+  .layout-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+    min-width: 100%
+  }
+}
+
+.col {
+  flex: 1;
+  display: grid;
+  gap: 2rem;
+  align-items: center;
+}
+
+.card {
+  padding: 2rem;
+  background-color: white;
+  border-top: 0.25rem solid;
+  border-radius: 0.25rem;
+  box-shadow: 0rem 1rem 1.5rem -0.5rem rgb(0 0 100 / 0.1);
+}
+
+.card__title {
+  font-size: var(--font-size-600);
+  margin: 0;
+}
+
+.card__img {
+  display: block;
+  margin-top: 2rem;
+  margin-left: auto;
+}
+
+.border-cyan {
+  border-color: var(--color-primary-Cyan);
+}
+.border-red {
+  border-color: var(--color-primary-red);
+}
+.border-orange {
+  border-color: var(--color-primary-Orange);
+}
+.border-blue {
+  border-color: var(--color-primary-Blue);
+}
