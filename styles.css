@@ -13,18 +13,18 @@
   --font-size-400: 0.9375rem;
   --font-size-500: 1.25rem;
   --font-size-600: 1.625rem;
-  --font-size-900: 2.5rem;
+  --font-size-900: 2.25rem;
 
   /* Neutral Colors */
-  --color-light-gray: hsl(0, 0%, 98%);
-  --color-Grayish-Blue: hsl(229, 6%, 66%);
-  --color-Dark-Blue: hsl(234, 12%, 34%);
+  --color-light-gray: #fafafa;
+  --color-Grayish-Blue: #a3a5ae;
+  --color-Dark-Blue: #4c4e61;
 
   /* Primary Colors */
-  --color-primary-red: hsl(0, 78%, 62%);
-  --color-primary-Cyan: hsl(180, 62%, 55%);
-  --color-primary-Orange: hsl(34, 97%, 64%);
-  --color-primary-Blue: hsl(212, 86%, 64%);
+  --color-primary-red: #ea5353;
+  --color-primary-Cyan: #45d3d3;
+  --color-primary-Orange: #fcaf4a;
+  --color-primary-Blue: #549ef2;
 }
 
 *,
@@ -60,7 +60,7 @@ h3 {
 }
 
 .wrapper-narrow {
-  max-width: 550px;
+  max-width: 600px;
 }
 
 header {
@@ -69,7 +69,7 @@ header {
 }
 
 header p {
-  font-size: var(--font-size-500);
+  font-size: var(--font-size-400);
 }
 
 h1 {
@@ -89,7 +89,7 @@ h1 span {
 @media (min-width: 800px) {
   .layout-grid {
     grid-template-columns: 1fr 1fr 1fr;
-    min-width: 100%
+    min-width: 100%;
   }
 }
 
@@ -109,7 +109,8 @@ h1 span {
 }
 
 .card__title {
-  font-size: var(--font-size-600);
+  font-size: var(--font-size-500);
+  font-weight: var(--font-Weight-bold);
   margin: 0;
 }
 
